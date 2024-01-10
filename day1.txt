@@ -1,0 +1,59 @@
+Script started on 2024-01-10 04:44:24+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="199" LINES="38"]
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git branch][K[K[K[K[K[K[Kinit
+[?2004lReinitialized existing Git repository in /root/git/.git/
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# ls -a
+[?2004l[0m[01;34m.[0m  [01;34m..[0m  [01;34m.git[0m  day1.txt
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git branch
+[?2004l[?1h=[K[?1l>[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git checkpo[K[Kout -b master
+[?2004lSwitched to a new branch 'master'
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git checkout -b master[K[K[K[K[K[Kday1
+[?2004lSwitched to a new branch 'day1'
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git checkout -b day1[K2
+[?2004lSwitched to a new branch 'day2'
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git checkout -b day2[K3
+[?2004lSwitched to a new branch 'day3'
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git bswitch master[1P[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lfatal: invalid reference: master
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git [K[K[K[Kgit switch mastercheckout -b day3[K[K[K[Kmaster
+[?2004lSwitched to a new branch 'master'
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# touch master.java
+[?2004l[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# echo "I am master bracnch[K[K[K[Knch"
+[?2004lI am master branch
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# echo "I am master branch"> [K[K[K" > master.java
+[?2004l[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git add master.jab[Kva
+[?2004l[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git commit -m "Master1"
+[?2004l[master (root-commit) b3c862f] Master1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 master.java
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git remote add itc1 [7mgit@github.com:lopanath/itc1.git[27mgit@github.com:lopanath/itc1.git
+[?2004l[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git remote -v
+[?2004litc1	git@github.com:lopanath/itc1.git (fetch)
+itc1	git@github.com:lopanath/itc1.git (push)
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# remote [K[K[K[K[K[K[Kgit remote
+[?2004litc1
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git branch
+[?2004l[?1h=* [32mmaster[m[m
+[K[?1l>[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git push -u itc1 master
+[?2004lWarning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 225 bytes | 225.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:lopanath/itc1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'itc1'.
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git checkout -b dev1
+[?2004lSwitched to a new branch 'dev1'
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# touch dev1.java
+[?2004l[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# echo "I am dev1" > dev1.java
+[?2004l[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git add .
+[?2004l[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git commit m "dev1"
+[?2004lerror: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'dev1' did not match any file(s) known to git
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git commit m "dev1"[1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[dev1 dbc0424] dev1
+ 2 files changed, 1 insertion(+)
+ create mode 100644 day1.txt
+ create mode 100644 dev1.java
+[?2004h]0;root@lopa: ~/gitroot@lopa:~/git# git push itc1 dev1
+[?2004lEnumerating objects: 5, d
